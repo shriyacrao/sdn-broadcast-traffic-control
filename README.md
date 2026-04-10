@@ -16,10 +16,12 @@ forwarding rules.
 - Detect and block ARP flooding attacks
 
 ## Topology
+```
 h1 (10.0.0.1) ---|
-h2 (10.0.0.2) ---| s1 (OpenFlow Switch)
+h2 (10.0.0.2) ---|--- s1 (OpenFlow Switch)
 h3 (10.0.0.3) ---|
 h4 (10.0.0.4) ---|
+```
 - 1 OpenFlow switch (OVS) running OpenFlow 1.3
 - 4 hosts with static IPs and MACs
 - Link speed: 100Mbps, delay: 1ms
